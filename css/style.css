@@ -140,11 +140,22 @@ nav a {   /*espace entre herbergement et acceuil*/
 
 }
 
+.cta{
+    flex: 1;
+}
+
 .conteneur{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
+}
+@media screen and (max-width: 375px) {
+    a{
+        border-bottom : 1px solid gainsboro ;
+        padding-bottom: 10px ;
+        
+    }
 }
 
 @media screen and (max-width: 375px) { /*surligner au survol et deviens bleu */
