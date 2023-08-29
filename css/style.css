@@ -181,6 +181,189 @@ nav a {   /*espace entre herbergement et acceuil*/
       }
   }
 
+  .centrer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur-formulaire{
+    display: flex; 
+}
+
+.conteneur-formulaire label{
+    width: 50px;
+    height: 49px;
+    font-size: 22px;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.conteneur-formulaire input[type='search']{
+    max-width: 300px;
+    min-width: 160px;
+    width: 377px;
+    height: 49px;
+    gap: 24px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border: 2px solid #F2F2F2;
+}
+
+
+
+.conteneur-btn-form{
+    width:  100px;
+    padding: 15px 16px 15px 16px;
+    position: relative;
+    gap: 10px;
+    top: -3.3em;
+    left:  320px;
+    right: 10px;
+    font-size: 20px;  
+    border-radius: 0 15px 15px 0;
+}
+
+.filtre{
+    background-color: white;
+    display: flex;
+}
+
+.btn-economique i{
+    width: 22px;
+    height: 22px;
+}
+
+h3{
+    top: -30em;
+}
+
+.btn-economique{
+    border: 2px solid #D9D9D9;
+    position: relative;
+    width: 167px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-familial{
+    border: 2px solid #D9D9D9;
+    position: relative;
+    width: 167px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-romantique{
+    border: 2px solid #D9D9D9;
+    position: relative;
+    width: 167px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-pepite{
+    border: 2px solid #D9D9D9;
+    position: relative;
+    width: 167px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-economique:hover{
+    border : 1px solid blue ;
+    padding-top: 10px ;
+    color: blue;
+}
+
+.btn-familial:hover{
+    border : 1px solid blue ;
+    padding-top: 10px ;
+    color: blue;
+}
+
+.btn-pepite:hover{
+    border : 1px solid blue ;
+    padding-top: 10px ;
+    color: blue;
+}
+
+.btn-romantique:hover{
+    border : 1px solid blue ;
+    padding-top: 10px ;
+    color: blue;
+}
+
+@media screen and (min-width: 820px) {
+    .btn-pc{
+        width: 80px;
+        height: 49px;
+        padding: 25px 2px;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        color: white;
+        background-color: blue;
+    }
+    .btn-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .btn-mobile{
+        width: 50px;
+        height: 100%;
+        padding: 0 10px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color: blue;
+    }
+    .btn-pc{
+        display: none;
+    }
+}
+
+/*
+form{
+    display: flex;
+    height: 60px;
+}
+*/
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
