@@ -215,6 +215,19 @@ nav a {   /*espace entre herbergement et acceuil*/
 }
 
 
+.filtre button {
+    font-size: 16px; /* Modifier la taille des titres selon vos préférences */
+}
+
+.filtre i {
+    font-size: 22px; /* Modifier la taille des logos selon vos préférences */
+}
+
+.filtre h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Ajuster la marge inférieure selon vos préférences */
+}
+
 
 .conteneur-btn-form{
     width:  100px;
@@ -228,9 +241,13 @@ nav a {   /*espace entre herbergement et acceuil*/
     border-radius: 0 15px 15px 0;
 }
 
+
+
 .filtre{
     background-color: white;
     display: flex;
+    align-items: flex-start;
+    text-align: start;
 }
 
 .btn-economique i{
