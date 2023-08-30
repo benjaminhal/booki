@@ -21,7 +21,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -74,6 +73,48 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergement-title {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hebergement-cards .card-heb{
+    width: 250.33px;
+    height: 207.25px;
+    border-radius: 20px ;
+    padding: 0 0 15px 0;
+    gap: 4px;
+    display: inline-block;
+}
+
+.hebergement-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergement-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergement-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergement-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -150,7 +191,7 @@ nav a {   /*espace entre herbergement et acceuil*/
     justify-content: space-between;
     gap: 100px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 412px) {
     a{
         border-bottom : 1px solid gainsboro ;
         padding-bottom: 10px ;
@@ -158,14 +199,14 @@ nav a {   /*espace entre herbergement et acceuil*/
     }
 }
 
-@media screen and (max-width: 375px) { /*surligner au survol et deviens bleu */
+@media screen and (max-width: 412px) { /*surligner au survol et deviens bleu */
     header nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
       }
   }
-  @media screen and (max-width: 375px) {/*surligner au survol et deviens bleu */
+  @media screen and (max-width: 412px) {/*surligner au survol et deviens bleu */
     a:hover {
         border-bottom : 1px solid blue ;
         padding-bottom: 10px ;
@@ -292,7 +333,29 @@ nav a {   /*espace entre herbergement et acceuil*/
     flex-direction: row;
 }
 
+.btn-i{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white ;
+}
 
+.info-logement i{
+    width: 4px;
+    height: 10px;
+    top: 7px;
+    left: 10px;
+}
+
+.info-logement p{
+    size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    position: relative;
+    top: -2.2em;
+    left: 40px;
+}
 h3{
     top: -30em;
 }
@@ -381,6 +444,8 @@ h3{
     color: black
 }
 
+
+
 /*
 form{
     display: flex;
@@ -426,14 +491,11 @@ form{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 412px) {
+@media (max-width: 415px) {
     .btn-pc{
         display: none;
     }
     .cta{
-        flex-direction: column;
-    }
-    .conteneur-btn-filtre{
         display: flex;
         flex-direction: row;
     }
@@ -447,7 +509,7 @@ form{
     /* ... */
 
 
-@media screen and (min-width: 413px) {
+@media screen and (min-width: 416px) {
     /*.btn-pc{
         width: 80px;
         height: 49px;
