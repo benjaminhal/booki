@@ -181,7 +181,7 @@ nav a {   /*espace entre herbergement et acceuil*/
       }
   }
 
-  .centrer-flex{
+.centrer-flex{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +196,6 @@ nav a {   /*espace entre herbergement et acceuil*/
     height: 49px;
     font-size: 22px;
     border-radius: 15px 0 0 15px;
-    cursor: pointer;
     background-color: #F2F2F2;
 }
 
@@ -210,26 +209,22 @@ nav a {   /*espace entre herbergement et acceuil*/
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    border: none;
+    cursor: pointer;
     border: 2px solid #F2F2F2;
 }
 
 
 .filtre button {
-    font-size: 16px; /* Modifier la taille des titres selon vos préférences */
+    font-size: 16px;
+    font-size-adjust: ex-height 0.58; /* Modifier la taille des titres des filtres selon vos préférences */
 }
 
 .filtre i {
-    font-size: 22px; /* Modifier la taille des logos selon vos préférences */
-}
-
-.filtre h2 {
-    margin-top: 0;
-    margin-bottom: 20px; /* Ajuster la marge inférieure selon vos préférences */
+    font-size: 22px; /* Modifier la taille des logos des filtre selon vos préférences */
 }
 
 
-.conteneur-btn-form{
+/*.conteneur-btn-form{
     width:  100px;
     padding: 15px 16px 15px 16px;
     position: relative;
@@ -237,9 +232,50 @@ nav a {   /*espace entre herbergement et acceuil*/
     top: -3.3em;
     left:  320px;
     right: 10px;
-    font-size: 20px;  
+    font-size: 20px; 
+    flex-wrap: wrap; 
     border-radius: 0 15px 15px 0;
+}*/
+
+.btn-pc{
+    font-size: 16px;
+    position: relative;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 132px;
+    height: 49px;
+    border-radius: 0 15px 15px 0;
+    padding: 15px 16px 15px 16px;
+    gap: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    /* style de l'ecriture de rechercher */
 }
+
+.centrer-flex i {
+    color: black;
+}
+
+.btn-mobile{
+    width: 49px;
+    height: 49px;
+    border-radius: 15px;
+    padding: 15px 16px 15px 16px;
+    gap: 10px;
+    background-color: blue;
+    border: none;
+    position: relative;
+}
+
+.conteneur-btn-form i {
+    width: 17px;
+    height: 17px;
+    color: white;
+}
+
+
 
 
 
@@ -248,12 +284,14 @@ nav a {   /*espace entre herbergement et acceuil*/
     display: flex;
     align-items: flex-start;
     text-align: start;
+    flex-direction: column;
+}
+.conteneur-btn-filtre{
+    display: flex;
+    position: relative;
+    flex-direction: row;
 }
 
-.btn-economique i{
-    width: 22px;
-    height: 22px;
-}
 
 h3{
     top: -30em;
@@ -320,59 +358,27 @@ h3{
 }
 
 .btn-economique:hover{
-    border : 1px solid blue ;
-    padding-top: 10px ;
-    color: blue;
+    border: 1px solid blue;
+    background-color: rgba(222, 235, 255, 0.5);
+    color: black
 }
 
 .btn-familial:hover{
-    border : 1px solid blue ;
-    padding-top: 10px ;
-    color: blue;
+    border: 1px solid blue;
+    background-color: rgba(222, 235, 255, 0.5);
+    color: black
 }
 
 .btn-pepite:hover{
-    border : 1px solid blue ;
-    padding-top: 10px ;
-    color: blue;
+    border: 1px solid blue;
+    background-color: rgba(222, 235, 255, 0.5);
+    color: black
 }
 
 .btn-romantique:hover{
-    border : 1px solid blue ;
-    padding-top: 10px ;
-    color: blue;
-}
-
-@media screen and (min-width: 820px) {
-    .btn-pc{
-        width: 80px;
-        height: 49px;
-        padding: 25px 2px;
-        border: none;
-        border-radius: 0 20px 20px 0;
-        cursor: pointer;
-        color: white;
-        background-color: blue;
-    }
-    .btn-mobile{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 375px){
-    .btn-mobile{
-        width: 50px;
-        height: 100%;
-        padding: 0 10px;
-        border-radius: 15px;
-        border: none;
-        cursor: pointer;
-        color: white;
-        background-color: blue;
-    }
-    .btn-pc{
-        display: none;
-    }
+    border: 1px solid blue;
+    background-color: rgba(222, 235, 255, 0.5);
+    color: black
 }
 
 /*
@@ -420,6 +426,40 @@ form{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 412px) {
+    .btn-pc{
+        display: none;
+    }
+    .cta{
+        flex-direction: column;
+    }
+    .conteneur-btn-filtre{
+        display: flex;
+        flex-direction: row;
+    }
+    .conteneur-btn-filtre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 70px;
+        gap: 5px;
+    }
 }
+    /* ... */
+
+
+@media screen and (min-width: 413px) {
+    /*.btn-pc{
+        width: 80px;
+        height: 49px;
+        padding: 25px 2px;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        color: white;
+        background-color: blue;
+    }*/
+    .btn-mobile{
+        display: none;
+    }
+}
+
