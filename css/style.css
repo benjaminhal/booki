@@ -174,6 +174,7 @@ a {
     margin-bottom: 5px;
 }
 
+/*logo et nav*/ 
 nav{   
   display: flex;
   flex-direction: row;
@@ -193,6 +194,27 @@ nav a {   /*espace entre herbergement et acceuil*/
 
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    float: initial;
+    
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    flex-direction: row;
+}
+
 .cta{
     flex: 1;
 }
@@ -203,43 +225,14 @@ nav a {   /*espace entre herbergement et acceuil*/
     justify-content: space-between;
     gap: 100px;
 }
-@media screen and (max-width: 412px) {
-    a{
-        border-bottom : 1px solid gainsboro ;
-        padding-bottom: 10px ;
-        
-    }
-}
 
-@media screen and (max-width: 412px) { /*surligner au survol et deviens bleu */
-    header nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-  }
-  @media screen and (max-width: 412px) {/*surligner au survol et deviens bleu */
-    a:hover {
-        border-bottom : 1px solid blue ;
-        padding-bottom: 10px ;
-        color: blue;
-      }
-  }
-
-  @media screen and (min-width: 820px) {/*surligner au survol et deviens bleu */
-    a:hover {
-        border-top : 1px solid blue ;
-        padding-top: 10px ;
-        color: blue;
-      }
-  }
 
 .centrer-flex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/*formulauraire*/
 .conteneur-formulaire{
     display: flex; 
 }
@@ -267,14 +260,7 @@ nav a {   /*espace entre herbergement et acceuil*/
 }
 
 
-.filtre button {
-    font-size: 16px;
-    font-size-adjust: ex-height 0.58; /* Modifier la taille des titres des filtres selon vos préférences */
-}
 
-.filtre i {
-    font-size: 22px; /* Modifier la taille des logos des filtre selon vos préférences */
-}
 
 
 /*.conteneur-btn-form{
@@ -330,7 +316,7 @@ nav a {   /*espace entre herbergement et acceuil*/
 
 
 
-
+/*filtres*/
 
 .filtre{
     background-color: white;
@@ -344,7 +330,14 @@ nav a {   /*espace entre herbergement et acceuil*/
     position: relative;
     flex-direction: row;
 }
+.filtre button {
+    font-size: 16px;
+    font-size-adjust: ex-height 0.58; /* Modifier la taille des titres des filtres selon vos préférences */
+}
 
+.filtre i {
+    font-size: 22px; /* Modifier la taille des logos des filtre selon vos préférences */
+}
 .btn-i{
     width: 24px;
     height: 24px;
@@ -371,6 +364,7 @@ nav a {   /*espace entre herbergement et acceuil*/
 h3{
     top: -30em;
 }
+
 
 .btn-economique{
     border: 2px solid #D9D9D9;
@@ -473,6 +467,9 @@ form{
     .hebergements-and-populaires {
         flex-direction: column;
     }
+    nav{
+        padding: 0 200px 0px 5px;
+    }
 
     .hebergements {
         width: 100%;
@@ -485,7 +482,7 @@ form{
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -504,10 +501,13 @@ form{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 415px) {
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
     .btn-pc{
         display: none;
     }
-    .cta{
+    li{
         display: flex;
         flex-direction: row;
     }
@@ -542,3 +542,85 @@ form{
     }
 }
 
+@media screen and (max-width: 412px) {
+    a{
+        border-bottom : 1px solid gainsboro ;
+        padding-bottom: 10px ;
+        
+    }
+}
+
+@media screen and (max-width: 412px) { /*surligner au survol et deviens bleu */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+  @media screen and (max-width: 412px) {/*surligner au survol et deviens bleu */
+    li a:hover {
+        color: blue;
+        border-bottom: 1px solid blue;
+    }
+    
+    li a{
+        border-bottom: 1px solid gainsboro;
+    }
+  }
+
+  @media screen and (min-width: 820px) {/*surligner au survol et deviens bleu */
+    li a:hover {
+        color: blue;
+        border-top: 1px solid blue;
+    }
+    
+    li a{
+        border-top: 1px solid gainsboro;
+    }
+  }
+
+
+
+/*ACTICITES*/
+.card-activite img{
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+    border: 20px 19px 20px 19px;
+}
+
+.hebergement-title {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card-activite {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.activite-card .card-activite{
+    width:  400px;
+    height: 400px;
+    border-radius: 20px ;
+    padding: 0 30px 15px 0;
+    gap: 4px;
+    display: inline;
+}
+
+.act{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: violet;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.activite-card .card-act{
+    width: 250.33px;
+    height: 207.25px;
+    border-radius: 20px;
+    padding: 0 50px 15px 0;
+    gap: 4px;
+    display: inline-block
+}
