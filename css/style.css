@@ -61,40 +61,162 @@ a {
 
 .header-presentation{
     margin: 30px;
+    width: 90%;
 }
+
+/*logo et nav*/ 
+nav{   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0 60px 0 40px;
+  }
+  
+  
+  .logoa img{ /*TAILLE DU LOGO*/
+      width: 120px;
+      margin: 20px;
+  }
+  
+  .conteneur ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      width: 100%;
+      float: right;
+      flex-direction: row;
+  }
+  
+  li {
+      float: initial; 
+  }
+  
+  .conteneur li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      flex-direction: row;
+  }
+  
+  .cta{
+      flex: 1;
+  }
+  
+  .centrer-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  /*formulauraire*/
+  .conteneur-formulaire{
+      display: flex;
+      margin: 30px; 
+  }
+  
+  .conteneur-formulaire label{
+      width: 50px;
+      height: 49px;
+      font-size: 22px;
+      border-radius: 15px 0 0 15px;
+      background-color: #F2F2F2;
+  }
+  
+  .conteneur-formulaire input[type='search']{
+      max-width: 300px;
+      min-width: 160px;
+      width: 377px;
+      height: 49px;
+      gap: 24px;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      border: 2px solid #F2F2F2;
+  }
+  
+  
+  
+  
+  
+  /*.conteneur-btn-form{
+      width:  100px;
+      padding: 15px 16px 15px 16px;
+      position: relative;
+      gap: 10px;
+      top: -3.3em;
+      left:  320px;
+      right: 10px;
+      font-size: 20px; 
+      flex-wrap: wrap; 
+      border-radius: 0 15px 15px 0;
+  }*/
+  
+  .btn-pc{
+      font-size: 16px;
+      background-color: blue;
+      border: none;
+      color: white;
+      font-weight: bold;
+      width: 132px;
+      height: 49px;
+      border-radius: 0 15px 15px 0;
+      padding: 15px 16px 15px 16px;
+      gap: 10px;
+      flex-direction: column;
+      cursor: pointer;
+      /* style de l'ecriture de rechercher */
+  }
+  
+  .centrer-flex i {
+      color: black;
+  }
+  
+  .btn-mobile{
+      width: 49px;
+      height: 49px;
+      border-radius: 15px;
+      padding: 15px 16px 15px 16px;
+      gap: 10px;
+      background-color: blue;
+      border: none;
+      position: relative;
+  }
+  
+  .conteneur-btn-form i {
+      width: 17px;
+      height: 17px;
+      color: white;
+  }
+  
+  .conteneur-btn-filtre h2{
+      position: relative;
+      margin: 30px;
+      top: -0.2em;
+  }
+  
+  
+  
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
-/*
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
-.populaires{
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    margin: 30px;
-    box-sizing: border-box;
-}*/
 
-.hebergements{
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    margin: 30px;
-    box-sizing: border-box;
-}
 /****** Hebergements ***********/
-.hebergements {
+.hebergements{
     width: 100%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px;
+    box-sizing: border-box;
 }
-
 .hebergement-title {
     justify-content: space-between;
     align-items: flex-end;
@@ -189,157 +311,8 @@ a {
     margin-bottom: 5px;
 }
 
-/*logo et nav*/ 
-nav{   
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 150px;
-  padding: 0 60px 0 40px;
-}
-
-
-.logoa img{ /*TAILLE DU LOGO*/
-    width: 120px;
-
-}
-
-.conteneur ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
-    padding-left: 900px;
-    flex-direction: row;
-}
-
-li {
-    float: initial;
-    
-}
-
-.conteneur li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    flex-direction: row;
-}
-
-.cta{
-    flex: 1;
-}
-
-.conteneur{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 100px;
-}
-
-
-.centrer-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*formulauraire*/
-.conteneur-formulaire{
-    display: flex;
-    margin: 30px; 
-}
-
-.conteneur-formulaire label{
-    width: 50px;
-    height: 49px;
-    font-size: 22px;
-    border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
-}
-
-.conteneur-formulaire input[type='search']{
-    max-width: 300px;
-    min-width: 160px;
-    width: 377px;
-    height: 49px;
-    gap: 24px;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #F2F2F2;
-}
-
-
-
-
-
-/*.conteneur-btn-form{
-    width:  100px;
-    padding: 15px 16px 15px 16px;
-    position: relative;
-    gap: 10px;
-    top: -3.3em;
-    left:  320px;
-    right: 10px;
-    font-size: 20px; 
-    flex-wrap: wrap; 
-    border-radius: 0 15px 15px 0;
-}*/
-
-.btn-pc{
-    font-size: 16px;
-    position: relative;
-    background-color: blue;
-    border: none;
-    color: white;
-    font-weight: bold;
-    width: 132px;
-    height: 49px;
-    border-radius: 0 15px 15px 0;
-    padding: 15px 16px 15px 16px;
-    gap: 10px;
-    flex-direction: column;
-    cursor: pointer;
-    /* style de l'ecriture de rechercher */
-}
-
-.centrer-flex i {
-    color: black;
-}
-
-.btn-mobile{
-    width: 49px;
-    height: 49px;
-    border-radius: 15px;
-    padding: 15px 16px 15px 16px;
-    gap: 10px;
-    background-color: blue;
-    border: none;
-    position: relative;
-}
-
-.conteneur-btn-form i {
-    width: 17px;
-    height: 17px;
-    color: white;
-}
-
-.conteneur-btn-filtre h2{
-    position: relative;
-    margin: 30px;
-    top: -0.2em;
-}
-
-
 
 /*filtres*/
-
-
 
 .filtre{
     background-color: white;
@@ -348,12 +321,7 @@ li {
     text-align: start;
     flex-direction: column;
 }
-.conteneur-btn-filtre{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    
-}
+
 .filtre button {
     font-size: 16px;
     /*margin-left: 20px;*/
@@ -364,24 +332,14 @@ li {
     font-size: 22px; /* Modifier la taille des logos des filtre selon vos préférences */
 }
 
-.info-logement i{
-
-}
 .btn-i{
     width  : 30px;
     height : 30px;
-    /*position:absolute;*/
     border-radius: 50px;
     border: solid 1px gainsboro;
     background : transparent;
     margin: 20px;
     margin-bottom: 20px;
-   /* width: 24px;
-    height: 24px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    margin: 30px;
-    background-color: white ;*/
 }
 
 .info-logement i{
@@ -409,67 +367,6 @@ h3{
 
 
 
-
-.btn-economique{
-    border: 2px solid #D9D9D9;
-    position: relative;
-    width: 167px;
-    height: 50px;
-    margin: 10px;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 10px;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-familial{
-    border: 2px solid #D9D9D9;
-    position: relative;
-    width: 167px;
-    height: 50px;
-    margin: 10px;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 10px;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-romantique{
-    border: 2px solid #D9D9D9;
-    position: relative;
-    width: 167px;
-    height: 50px;
-    margin: 10px;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 10px;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-pepite{
-    border: 2px solid #D9D9D9;
-    position: relative;
-    width: 167px;
-    height: 50px;
-    margin: 10px;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 10px;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-}
-
 .btn-economique:hover{
     border: 1px solid blue;
     background-color: rgba(222, 235, 255, 0.5);
@@ -493,8 +390,6 @@ h3{
     background-color: rgba(222, 235, 255, 0.5);
     color: black
 }
-
-
 
 /*
 form{
@@ -544,7 +439,6 @@ form{
     }
     .activite-card .card-act {
         width: 297px;
-        /* height: 230px; */
         border-radius: 20px;
         padding: 0 0 15px 0;
         gap: 4px;
@@ -556,6 +450,7 @@ form{
     }
     .footerColumn{
         width: 700px;
+        /*flex-direction: column;*/
         flex-wrap: wrap;
     }
     .footerbloc{
@@ -570,6 +465,28 @@ form{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 416px) {
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .conteneur {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .conteneur li a:hover {
+        color: blue;
+        border-bottom: 1px solid blue;
+    }
+    
+    .conteneur li a{
+        border-bottom: 1px solid gainsboro;
+    }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -582,13 +499,83 @@ form{
         flex-direction: row;
     }
     .conteneur-btn-filtre{
-        display: flex;
         display: grid;
         grid-template-columns: 175px 175px;
         grid-template-rows: 70px 70px;
         gap: 5px;
     }
-
+    .btn-filtre{
+        display: grid;
+        grid-template-columns: 175px 175px;
+        grid-template-rows: 70px 70px;
+        gap: 5px;
+        position: relative;
+        right: 181px;
+    }
+    .conteneur-btn-filtre h2 {
+        position: relative;
+        top: -0.2em;
+        left: 200px
+    }
+    .btn-economique{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin-left: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-familial{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin-left: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-romantique{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin-left: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-pepite{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin-left: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
     .conteneur ul{
         padding-left: 0px;
     }
@@ -633,16 +620,93 @@ form{
 
 
 @media screen and (min-width: 416px) {
-    /*.btn-pc{
-        width: 80px;
-        height: 49px;
-        padding: 25px 2px;
-        border: none;
-        border-radius: 0 20px 20px 0;
+    .conteneur li a:hover {
+        color: blue;
+        border-top: 1px solid blue;
+    }
+    .conteneur {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .conteneur li a{
+        border-top: 1px solid white;
+    }
+    .conteneur-btn-filtre{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .btn-filtre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .btn-economique{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
         cursor: pointer;
-        color: white;
-        background-color: blue;
-    }*/
+    }
+    
+    .btn-familial{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-romantique{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-pepite{
+        border: 2px solid #D9D9D9;
+        position: relative;
+        width: 167px;
+        height: 50px;
+        margin: 10px;
+        padding: 4px 19px 4px 19px;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
     .btn-mobile{
         display: none;
     }
@@ -683,57 +747,13 @@ form{
     }
 }
 
-/*@media screen and (max-width: 412px) {
-    nav a{
-        border-bottom : 1px solid gainsboro ;
-        padding-bottom: 10px ;
-        
-    }
-}*/
-
-@media screen and (max-width: 416px) { /*surligner au survol et deviens bleu */
-    header nav {
-        width: 100%;
+@media (max-width: 816px){
+    .footerColumn{
         flex-direction: column;
-        padding: 0px;
-        align-items: center;
-        justify-content: center;
-      }
-    .conteneur li a:hover {
-        color: blue;
-        border-bottom: 1px solid blue;
     }
-    
-    .conteneur li a{
-        border-bottom: 1px solid gainsboro;
-    }
-  }
-
-  @media screen and (min-width: 415px) {/*surligner au survol et deviens bleu */
-    .conteneur li a:hover {
-        color: blue;
-        border-top: 1px solid blue;
-    }
-    
-    .conteneur li a{
-        border-top: 1px solid white;
-    }
-    .footer{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-  }
-
-
+}
 
 /*ACTIvITES*/
-/*.card-activite img{
-    width: 100%;
-    height:380px;
-    border-radius: 20px 20px 0 0;
-    border: 20px 19px 20px 19px;
-    object-fit: cover;
-}*/
 
 .activite-title {
     justify-content: space-between;
@@ -746,7 +766,6 @@ form{
     border-radius: 20px;
     box-shadow: 0 0 20px #0000002e;
     overflow: hidden;
-    /*display: flex;*/
     flex-direction: row;
     padding: 5px;
 }
@@ -784,12 +803,13 @@ form{
 
 
 /*********footer*********/
-.bidon{
+.vide{
     display: block;
 }
 
 .footer{
     flex-shrink: 0;
+    width: 90%;
     background-color: var(--main-bg-color);
     border-radius: 20px 20px 0 0;
     height: 163x;
@@ -801,7 +821,7 @@ form{
 }
 
 .footerbloc{
-    width: 25%;
+    width: 78%;
     padding: 0 30px;
 }
 
@@ -820,7 +840,6 @@ form{
 
 .footerbloc ul{
     list-style-type: none;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
