@@ -324,12 +324,10 @@ nav{
 
 .filtre button {
     font-size: 16px;
-    /*margin-left: 20px;*/
-    font-size-adjust: ex-height 0.58; /* Modifier la taille des titres des filtres selon vos préférences */
 }
 
 .filtre i {
-    font-size: 22px; /* Modifier la taille des logos des filtre selon vos préférences */
+    font-size: 22px; 
 }
 
 .btn-i{
@@ -350,7 +348,6 @@ nav{
 }
 
 .info-logement p{
-    size: 16px;
     font-weight: 400;
     line-height: 18.78px;
     position: relative;
@@ -401,7 +398,7 @@ form{
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* version tablette*/
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -448,22 +445,10 @@ form{
         width: 700px;
         flex-wrap: wrap;
     }
-    .footerColumn{
-        width: 700px;
-        /*flex-direction: column;*/
-        flex-wrap: wrap;
-    }
-    .footerbloc{
-        width: 40%;
-        margin: 0 0;
-    }
-    .footerbloc :nth-child(1)
-    .footerbloc :nth-child(2){
-        margin-bottom: 50px;
-    }
+    
 }
 
-/* Small devices (phones, less than 768px) */
+/* version telephone*/
 @media (max-width: 416px) {
     header nav {
         width: 100%;
@@ -493,7 +478,7 @@ form{
     .btn-pc{
         display: none;
     }
-    li{
+    .conteneur li{
         width: 50%;
         display: flex;
         flex-direction: row;
@@ -514,8 +499,8 @@ form{
     }
     .conteneur-btn-filtre h2 {
         position: relative;
-        top: -0.2em;
-        left: 200px
+        top: -2.5em;
+        left: -9px;
     }
     .btn-economique{
         border: 2px solid #D9D9D9;
@@ -607,16 +592,10 @@ form{
         width: 300px;
         margin: 30px 30px;
     }
-    .footerbloc :nth-child(1)
-    .footerbloc :nth-child(2){
-        margin-bottom: 30px;
-    }
-    .footerbloc :nth-child(1){
-        margin-top: 0;
-    }
+   
     
 }
-    /* ... */
+    /* version pc */
 
 
 @media screen and (min-width: 416px) {
@@ -729,11 +708,10 @@ form{
         width: 100%;
         height: 380px;
         border-radius: 20px 20px 0 0;
-        border: 20px 19px 20px 19px;
         object-fit: cover;
     }
     .hebergements {
-        width: 90%;
+        width: 92%;
         
     }
     .footerColumn {
@@ -747,11 +725,6 @@ form{
     }
 }
 
-@media (max-width: 816px){
-    .footerColumn{
-        flex-direction: column;
-    }
-}
 
 /*ACTIvITES*/
 
@@ -793,7 +766,7 @@ form{
 
 .act{
     width: 100%;
-    background-color: none;
+    background-color: transparent;
     border-radius: 20px;
     padding: 30px;
     
@@ -812,7 +785,7 @@ form{
     width: 90%;
     background-color: var(--main-bg-color);
     border-radius: 20px 20px 0 0;
-    height: 163x;
+    
 }
 
 
@@ -821,7 +794,9 @@ form{
 }
 
 .footerbloc{
+    display: flex;
     width: 78%;
+    flex-wrap: wrap;
     padding: 0 30px;
 }
 
@@ -830,7 +805,7 @@ form{
 }
 
 .footerbloc h3{
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
