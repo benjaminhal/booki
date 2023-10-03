@@ -399,7 +399,11 @@ form{
 
 /****** Media queries ***********/
 /* version tablette*/
-@media (max-width: 1024px) {
+
+
+
+
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -413,9 +417,10 @@ form{
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
+    
 
     .populaires-cards a {
         width: 30%;
@@ -428,16 +433,34 @@ form{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .card-activite img{
+    .hebergement-cards .card-heb {
+        width: 200.33px;
+        height: 207.25px;
+        border-radius: 20px;
+        padding: 0 28px 28px 0;
+        gap: 4px;
+        display: inline-block;
+    }
+    .card-pop{
+        padding: 16px;
+        width: 51%;
+    }
+    
+    .activite-card img {
         width: 100%;
-        height: 124px;;
+        height: 200px;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
+    .activite-card{
+        display: flex;
+        flex-direction: row;
+    }
     .activite-card .card-act {
-        width: 297px;
+        width: 300px;
+        height: 250px;
         border-radius: 20px;
-        padding: 0 0 15px 0;
+        padding: 0px 21px 15px 0;
         gap: 4px;
         display: inline-block;
     }
@@ -448,8 +471,11 @@ form{
     
 }
 
+
+
+
 /* version telephone*/
-@media (max-width: 416px) {
+@media screen and (max-width: 416px) {
     header nav {
         width: 100%;
         flex-direction: column;
@@ -485,7 +511,7 @@ form{
     }
     .conteneur-btn-filtre{
         display: grid;
-        grid-template-columns: 175px 175px;
+        grid-template-columns: 175px;
         grid-template-rows: 70px 70px;
         gap: 5px;
     }
@@ -495,12 +521,13 @@ form{
         grid-template-rows: 70px 70px;
         gap: 5px;
         position: relative;
-        right: 181px;
+        left: 14px;
+        top: -4em;
     }
     .conteneur-btn-filtre h2 {
         position: relative;
-        top: -2.5em;
-        left: -9px;
+        position: relative;
+        right: 188px;
     }
     .btn-economique{
         border: 2px solid #D9D9D9;
@@ -564,12 +591,61 @@ form{
     .conteneur ul{
         padding-left: 0px;
     }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-pop {
+        padding: 16px;
+        width: 90%;
+    }
     .populaires {
         background-color: var(--main-bg-color);
         border-radius: 0px;
         padding: 18px;
         margin: 0px;
     }
+
+    .hebergement-cards .card{
+        height: 207.25px;
+        border-radius: 20px;
+        padding: 10px 7px 0px 7px;
+        gap: 4px;
+        display: inline-block;
+    }
+    
+
+    .hebergement-cards .card-heb {
+        width: 267.33px;
+        height: 207.25px;
+        border-radius: 20px;
+        padding: 0 28px 28px 0;
+        gap: 4px;
+        display: inline-block;
+    }
+
+    .activite-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activite-card .card-act {
+        width: 274px;
+        height: 250px;
+        border-radius: 20px;
+        padding: 0px 0px 0px 1px;
+        gap: 4px;
+        display: inline-block;
+    }
+
+    .activite-card img {
+        width: 100%;
+        height: 160px;
+        border-radius: 19px 19px 0 0;
+        object-fit: cover;
+    }
+    
     .hebergements {
         width: 70%;
         background-color: transparent;
@@ -610,6 +686,7 @@ form{
         justify-content: space-between;
         gap: 100px;
     }
+
     
     .conteneur li a{
         border-top: 1px solid white;
@@ -700,16 +777,17 @@ form{
         width: 297px;
         height: 439px;
         border-radius: 20px ;
-        padding: 0 0 15px 0;
+        padding: 0 20px 15px 0;
         gap: 4px;
         display: inline-block;
     }
-    .card-activite img {
+    .activite-card img {
         width: 100%;
         height: 380px;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
+    
     .hebergements {
         width: 92%;
         
@@ -772,6 +850,8 @@ form{
     
     box-sizing: border-box;
 }
+
+
 
 
 
