@@ -527,7 +527,8 @@ form{
     .conteneur-btn-filtre h2 {
         position: relative;
         position: relative;
-        right: 188px;
+        right: 0px;
+        top: -2em;
     }
     .btn-economique{
         border: 2px solid #D9D9D9;
