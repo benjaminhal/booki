@@ -214,7 +214,7 @@ nav{
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    margin: 30px;
+    margin: 18px;
     box-sizing: border-box;
 }
 .hebergement-title {
@@ -340,6 +340,18 @@ nav{
     margin-bottom: 20px;
 }
 
+.i-art h1{
+    color: transparent;
+    width: 1%;
+    height: 1px;
+}
+
+.section-recherche h1{
+    color: transparent;
+    width: 1%;
+    height: 1px;
+}
+
 .info-logement i{
     width: 4px;
     height: 10px;
@@ -411,7 +423,7 @@ form{
         padding: 0 200px 0px 5px;
     }
     .populaires {
-        width: 92%;
+        width: 95%;
         margin-top: 50px;
     }
 
@@ -421,7 +433,9 @@ form{
         justify-content: space-between;
     }
     
-
+    .card-activite {
+        height: 254PX;
+    }
     .populaires-cards a {
         width: 30%;
     }
@@ -434,8 +448,8 @@ form{
         font-size: 13px;
     }
     .hebergement-cards .card-heb {
-        width: 200.33px;
-        height: 207.25px;
+        width: 192px;
+        height: 204.25px;
         border-radius: 20px;
         padding: 0 28px 28px 0;
         gap: 4px;
@@ -479,7 +493,7 @@ form{
         object-fit: cover;
     }
     .activite-card .card-act {
-        width: 280px;
+        width: 297px;
         height: 439px;
         border-radius: 20px;
         padding: 0 20px 15px 0;
@@ -505,6 +519,9 @@ form{
         flex-direction: row;
         justify-content: space-between;
         gap: 100px;
+    }
+    .card-activite {
+        height: 200px;
     }
     .conteneur li a:hover {
         color: blue;
@@ -547,6 +564,7 @@ form{
         top: -2em;
     }
     .btn-economique{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -562,6 +580,7 @@ form{
     }
     
     .btn-familial{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -577,6 +596,7 @@ form{
     }
     
     .btn-romantique{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -595,6 +615,7 @@ form{
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
+        background-color: white;
         height: 50px;
         margin-left: 10px;
         padding: 4px 19px 4px 19px;
@@ -723,12 +744,12 @@ form{
         flex-shrink: 0;
         width: 95%;
         background-color: var(--main-bg-color);
-        border-radius: 20px 20px 0 0;
         margin-left: 20px;
         margin-right: 20px;
         
     }
     .btn-economique{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -744,6 +765,7 @@ form{
     }
     
     .btn-familial{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -759,6 +781,7 @@ form{
     }
     
     .btn-romantique{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -774,6 +797,7 @@ form{
     }
     
     .btn-pepite{
+        background-color: white;
         border: 2px solid #D9D9D9;
         position: relative;
         width: 167px;
@@ -794,11 +818,11 @@ form{
         background-color: var(--main-bg-color);
         border-radius: 20px;
         padding: 30px;
-        margin: 30px;
+        margin: 19px;
         box-sizing: border-box;
     } 
     .hebergements {
-        width: 92%;
+        width: 95%;
         
     }
     .footerColumn {
@@ -811,6 +835,24 @@ form{
         align-items: flex-start;
     }
 }
+
+
+@media screen and (min-width: 1400px) {
+    .activite-card .card-act {
+        width: 319px;
+        height: 431px;
+        border-radius: 20px;
+        padding: 0 20px 15px 0;
+        gap: 4px;
+        display: inline-block;
+    }
+    .hebergements {
+        width: 72%;
+    }
+
+}
+
+
 
 
 /*ACTIvITES*/
@@ -855,7 +897,7 @@ form{
     width: 100%;
     background-color: transparent;
     border-radius: 20px;
-    padding: 60px;
+    padding: 30px;
     
     box-sizing: border-box;
 }
